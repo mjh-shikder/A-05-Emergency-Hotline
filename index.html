@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
-     <!-- DaisyUi CDN-->
+    <!-- DaisyUi CDN-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -23,12 +23,51 @@
     />
 
     <!-- CSS File -->
-     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
 
-     <!-- favicon -->
-      <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-</head>
-<body>
-    <h1>Emergency services</h1>
-</body>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="max-w-[1250px] mx-auto">
+      <nav class="my-8 mx-2.5">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center md:gap-5 gap-1.5">
+            <img
+              class="md:w-[50px] w-[40px]"
+              src="./assets/logo.png"
+              alt="Logo"
+            />
+            <h1
+              class="md:text-xl md:font-extrabold font-semibold text-[#006747]"
+            >
+              Emergency <br />
+              Service
+            </h1>
+          </div>
+          <div class="flex items-center md:gap-5 gap-1">
+            <div
+              class="flex items-center gap-3.5 bg-[#edfff1] md:py-2.5 md:px-5 rounded-full p-2.5"
+            >
+              <p class="font-extrabold">0</p>
+              <img class="w-[25px]" src="./assets/heart.png" alt="heart icon" />
+            </div>
+            <div
+              class="flex items-center gap-3.5 bg-[#edfff1] md:py-2.5 md:px-5 rounded-full p-2.5"
+            >
+              <p class="font-extrabold">100</p>
+              <img class="w-[25px]" src="./assets/coin.png" alt="coin icon" />
+            </div>
+            <div>
+              <button
+                class="bg-[#00a63e] font-semibold text-white md:py-2.5 md:px-7 p-2.5 rounded-full"
+              >
+                <span>2</span> Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
