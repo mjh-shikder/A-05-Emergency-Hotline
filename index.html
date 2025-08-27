@@ -90,9 +90,11 @@
       </section>
 
       <!-- Card Section -->
-      <section class="bg-[#f5fff6] mx-auto">
+      <section class="bg-[#f5fff6] mx-auto pb-14">
         <!-- Whole Section Parent -->
-        <div class="max-w-[95vw] md:max-w-[93vw] mx-auto pt-10 flex gap-3.5">
+        <div
+          class="max-w-[95vw] md:max-w-[93vw] mx-auto pt-10 flex flex-col md:flex-row gap-3.5"
+        >
           <!-- cards grid parent -->
           <div class="md:grid md:grid-cols-3 flex flex-col gap-3.5 w-[75%]">
             <!-- জাতীয় জরুরি সেবা -->
@@ -139,10 +141,7 @@
                 <div class="m-8">
                   <div class="flex justify-between items-center">
                     <div class="bg-[#ffe3e2] w-[60px] p-2.5 rounded-2xl mb-6">
-                      <img
-                        src="./assets/emergency.png"
-                        alt="emergency alart icon"
-                      />
+                      <img src="./assets/police.png" alt="Police icon" />
                     </div>
                     <div class="h-[60px]">
                       <span class="text-gray-500"
@@ -178,8 +177,8 @@
                   <div class="flex justify-between items-center">
                     <div class="bg-[#ffe3e2] w-[60px] p-2.5 rounded-2xl mb-6">
                       <img
-                        src="./assets/emergency.png"
-                        alt="emergency alart icon"
+                        src="./assets/fire-service.png"
+                        alt="fire-service alart icon"
                       />
                     </div>
                     <div class="h-[60px]">
@@ -218,8 +217,8 @@
                   <div class="flex justify-between items-center">
                     <div class="bg-[#ffe3e2] w-[60px] p-2.5 rounded-2xl mb-6">
                       <img
-                        src="./assets/emergency.png"
-                        alt="emergency alart icon"
+                        src="./assets/ambulance.png"
+                        alt="ambulance alart icon"
                       />
                     </div>
                     <div class="h-[60px]">
@@ -449,22 +448,36 @@
           </div>
 
           <!-- Call History -->
-          <div class="w-[15%]">
-            <div
-              id="call history"
-              class="bg-white rounded-lg shadow-md md:w-[400px] h-[1173px]"
-            >
-              <div class="flex justify-between px-3.5">
-                <div class="flex items-center gap-3.5">
-                  <i class="fa-regular fa-clock"></i>
-                  <h1>Call History</h1>
-                </div>
+          <div class="md:w-[15%] w-[93vw]">
+            <div class="bg-white rounded-lg shadow-md md:w-[400px] h-[1173px]">
+              <!-- title div -->
+              <div>
+                <div class="flex justify-between px-3.5 md:px-5 py-4">
+                  <div class="flex items-center gap-3.5">
+                    <i class="fa-regular fa-clock text-gray-500"></i>
+                    <h1 class="font-semibold">Call History</h1>
+                  </div>
 
-                <button
-                  class="bg-[#00a63e] font-semibold text-white md:py-2.5 md:px-7 p-2.5 rounded-full"
-                >
-                  <span>2</span> Copy
-                </button>
+                  <button
+                    class="bg-[#00a63e] font-semibold text-white px-9 md:py-2.5 md:px-7 p-2.5 rounded-full"
+                  >
+                    Clear
+                  </button>
+                </div>
+              </div>
+              <!-- History log  -->
+              <div
+                class="flex justify-between items-center w-[85%] mx-auto bg-[#fafafa] rounded-md px-3.5 py-2.5 mt-3.5"
+              >
+                <div>
+                  <h1 class="text-gray-800 hind-madurai-medium">
+                    জাতীয় জরুরি সেবা
+                  </h1>
+                  <h2 class="text-gray-700">999</h2>
+                </div>
+                <div>
+                  <p class="text-gray-800">11:44:58 AM</p>
+                </div>
               </div>
             </div>
           </div>
