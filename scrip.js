@@ -1,7 +1,10 @@
-// Hear count 
+// Heart count 
 let heartCountElement = document.getElementById('heart-count');
 
-let count = 0;
+let count = document.getElementById('heart-count').innerText;
+count = 0;
+
+
 // global function for card hart button click
 function cardHeartButton(id) {
     document.getElementById(id).addEventListener('click', function () {
