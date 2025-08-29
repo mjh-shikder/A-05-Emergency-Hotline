@@ -1,6 +1,7 @@
 Live Link - https://mjh-shikder.github.io/A-05-Emergency-Hotline/
 
 
+------------------------------------------------------------------------------------------------
 **Answer 1**
 The difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll is
 getElementById selects a single element by its ID.
@@ -50,3 +51,4 @@ preventDefault(): prevent the default action that the browser would normally do 
 stopPropagation(): Stops the event from bubbling up or propagating through the DOM.  By default, when and event happens on an element, it bubbles up to its parent elements, but when you want only the specific element's event handler to run, it comes to save. 
 
                   
+------------------------------------------------------------------------------------------------
