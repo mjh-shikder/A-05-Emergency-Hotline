@@ -38,7 +38,7 @@ document.getElementById('call-btn1').addEventListener('click', function () {
     const coinLeft = availableCoin - 20;
 
     document.getElementById('coin').innerText = coinLeft;
-//-----
+    //-----
     const data = {
         serviceName: 'National Emergency Service 🚨',
         number: 999,
@@ -48,7 +48,7 @@ document.getElementById('call-btn1').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -71,8 +71,8 @@ document.getElementById('call-btn1').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -104,7 +104,7 @@ document.getElementById('call-btn2').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -127,8 +127,8 @@ document.getElementById('call-btn2').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -161,7 +161,7 @@ document.getElementById('call-btn3').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -184,8 +184,8 @@ document.getElementById('call-btn3').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -218,7 +218,7 @@ document.getElementById('call-btn4').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -241,8 +241,8 @@ document.getElementById('call-btn4').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -265,7 +265,7 @@ document.getElementById('call-btn5').addEventListener('click', function () {
     document.getElementById('coin').innerText = coinLeft;
 
 
-//-----
+    //-----
     const data = {
         serviceName: 'Women & Child Helpline 👩‍👧‍👦',
         number: 109,
@@ -275,7 +275,7 @@ document.getElementById('call-btn5').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -298,8 +298,8 @@ document.getElementById('call-btn5').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -322,7 +322,7 @@ document.getElementById('call-btn6').addEventListener('click', function () {
 
     document.getElementById('coin').innerText = coinLeft;
 
-//-----
+    //-----
     const data = {
         serviceName: 'Anti-Corruption ⚖️',
         number: 106,
@@ -332,7 +332,7 @@ document.getElementById('call-btn6').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -355,8 +355,8 @@ document.getElementById('call-btn6').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -380,7 +380,7 @@ document.getElementById('call-btn7').addEventListener('click', function () {
     document.getElementById('coin').innerText = coinLeft;
 
 
-//-----
+    //-----
     const data = {
         serviceName: 'Electricity Outage ⚡',
         number: 16216,
@@ -390,7 +390,7 @@ document.getElementById('call-btn7').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -413,8 +413,8 @@ document.getElementById('call-btn7').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -448,7 +448,7 @@ document.getElementById('call-btn8').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -471,8 +471,8 @@ document.getElementById('call-btn8').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -495,7 +495,7 @@ document.getElementById('call-btn9').addEventListener('click', function () {
 
     document.getElementById('coin').innerText = coinLeft;
 
- //-----
+    //-----
     const data = {
         serviceName: 'Bangladesh Railway 🚅',
         number: 163,
@@ -505,7 +505,7 @@ document.getElementById('call-btn9').addEventListener('click', function () {
 
     //
     const histoContainer = document.getElementById('history-container')
-    
+
     histoContainer.innerText = "";
 
     for (const data of historyData) {
@@ -528,8 +528,8 @@ document.getElementById('call-btn9').addEventListener('click', function () {
         `
 
         histoContainer.appendChild(div)
-         
-        
+
+
 
     }
     //
@@ -546,4 +546,19 @@ clearButton.addEventListener('click', function () {
     historyContainer.innerHTML = "";
 })
 
+// Copy buttons funciotn
+const copyContainer = document.getElementById('copy-container');
+const copyButtons = document.getElementsByClassName('btn-copy');
 
+let copyCount = 0;
+
+for (let i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener('click', function () {
+        alert("Number Copied")
+        copyCount = copyCount + 1;
+        copyContainer.innerText = copyCount;
+    })
+}
+
+// copy to clip board
+// sorry pari na
